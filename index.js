@@ -1,5 +1,5 @@
 import express from "express";      // Requisição do pacote do express
-const app = express();              // Instancia o Express
+const ap = express();              // Instancia o Express
 const port = 3000;                  // Define a porta
 
 app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
