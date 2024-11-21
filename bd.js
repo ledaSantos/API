@@ -4,7 +4,7 @@ const { Pool } = pkg;
 
 async function connect() {
   const pool = new Pool({
-    connectionString: process.URL_BD=postgresql://neondb_owner:2KctDw3SeFWg@ep-square-grass-a5qqloli.us-east-2.aws.neon.tech/neondb?sslmode=require,
+    connectionString: process.env.URL_BD,
   });
   return pool.connect();
 }
