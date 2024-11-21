@@ -1,18 +1,3 @@
-import express from "express";      // Requisição do pacote do express
-const ap = express();              // Instancia o Express
-const port = 3000;                  // Define a porta
-
-app.get("/", (req, res) => {        // Cria a rota da raiz do projeto
-  console.log("Rota GET/ solicitada");
-  res.json({
-    nome: "Leidiane Dos Santos Cruz",      // Substitua pelo seu nome
-  });
-});
-
-app.listen(port, () => {            // Um socket para "escutar" as requisições
-  console.log(`Serviço escutando na porta:  ${port}`);
-});
-
 //index.js
 import dotenv from "dotenv";
 import express from "express";
@@ -27,7 +12,7 @@ app.get("/", (req, res) => {
   console.log("Rota / solicitada");
   // Cria a rota da raiz do projeto
   res.json({
-    nome: "Leidiane", // Substitua pelo seu nome
+    nome: "Leidiane Santos", // Substitua pelo seu nome
   });
 });
 
