@@ -57,4 +57,4 @@ async function updateUsuario(id, data) {
 
 //bd.js
 
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario };
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario };

@@ -1,7 +1,7 @@
 //index.js
 import dotenv from "dotenv";
 import express from "express";
-import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario } from "./bd.js";
+import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario,updateUsuario } from "./bd.js";
 
 dotenv.config();
 
