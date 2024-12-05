@@ -33,13 +33,7 @@ app.listen(port, () => {
 });
 
 //index.js
-app.get("/usuario", async (req, res) => {
-  try {
-    const usuario = await selectUsuario();
-    res.json(usuario);
-  } catch (error) {
-    res.status(error.status || 500).json({ message: error.message || "Erro!" });
-  }
+
 //index.js
 app.get("/usuario/:id", async (req, res) => {
   console.log("Rota GET /usuario/# solicitada");
