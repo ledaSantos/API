@@ -15,7 +15,6 @@ async function selectUsuarios() {
   return res.rows;
 }
 
-export { selectUsuarios };
 
 //bd.js
 async function selectUsuario(id) {
@@ -27,7 +26,6 @@ async function selectUsuario(id) {
   return res.rows;
 }
 
-export { selectUsuarios, selectUsuario };
 
 async function insertUsuario(data) {
   const client = await connect();
@@ -37,7 +35,6 @@ async function insertUsuario(data) {
   client.release();
 }
 
-export { selectUsuarios, selectUsuario, insertUsuario };
 
 //bd.js
 async function deleteUsuario(id) {
@@ -48,7 +45,6 @@ async function deleteUsuario(id) {
 }
 
 //bd.js
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario };
 
 //bd.js
 async function updateUsuario(id, data) {
@@ -60,4 +56,5 @@ async function updateUsuario(id, data) {
 }
 
 //bd.js
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario };
+
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario };

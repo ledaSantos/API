@@ -1,7 +1,7 @@
 //index.js
 import dotenv from "dotenv";
 import express from "express";
-import { selectUsuarios } from "./bd.js";
+import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario } from "./bd.js";
 
 dotenv.config();
 
@@ -33,7 +33,6 @@ app.listen(port, () => {
 });
 
 //index.js
-import { selectUsuarios, selectUsuario } from "./bd.js";
 
 //index.js
 app.get("/usuario/:id", async (req, res) => {
@@ -50,7 +49,6 @@ app.get("/usuario/:id", async (req, res) => {
 
 app.use(express.json());
 
-import { selectUsuarios, selectUsuario, insertUsuario } from "./bd.js";
 //index.js
 app.post("/usuario", async (req, res) => {
   console.log("Rota POST /usuario solicitada");
@@ -62,7 +60,6 @@ app.post("/usuario", async (req, res) => {
   }
 });
 
-import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario } from "./bd.js";
 
 //index.js
 app.delete("/usuario/:id", async (req, res) => {
@@ -78,7 +75,6 @@ app.delete("/usuario/:id", async (req, res) => {
   }
 });
 //index.js
-import { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario } from "./bd.js";
 
 //index.js
 app.put("/usuario/:id", async (req, res) => {
@@ -95,3 +91,4 @@ app.put("/usuario/:id", async (req, res) => {
     res.status(error.status || 500).json({ message: error.message || "Erro!" });
   }
 });
+
