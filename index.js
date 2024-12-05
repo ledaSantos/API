@@ -8,7 +8,7 @@ dotenv.config();
 const app = express(); // Instancia o Express
 const port = 3000; // Define a porta
 
-app.get("/", (req, res) => {
+app.get("usuario/", (req, res) => {
   console.log("Rota / solicitada");
   // Cria a rota da raiz do projeto
   res.json({
